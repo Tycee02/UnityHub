@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: none;
+}
+
+main {
+    position: absolute;
+}
+
+main .body {
+    margin-top: 30px;
+    width: 40%;
+    height: fit-content;
+    padding: 30px;
+}
+
+main .body h1 {
+    font-weight: 900;
+    font-size: 38px;
+}
+
+main .body2 {
+    margin-top: 2px;
+    width: 47%;
+    height: fit-content;
+    padding-left: 30px;
+}
+
+.form {
+    margin-left: 30px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  
+  /* Email Input Field */
+  form input[type="email"] {
+    padding: 12px 16px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Form Options */
+  .form-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .form-options .option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .start {
+    display: flex;
+  }
+
+  .form-options label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Submit Button */
+  form button[type="submit"] {
+    background-color: #0A3FC2;
+    color: #fff;
+    padding: 12px 24px;
+    margin-left: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #052471;
+  }
+
+  .image {
+    position: absolute;
+    top: -5%;
+    margin-left: 600px;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .image img {
+    height: fit-content;
+    width: 700px;
+  }
+
+.build {
+    height: 120px;
+    background-color: #ccc;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.build h1 {
+    padding: 60px;
+}
