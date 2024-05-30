@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, grey, #fff);
+    color: #11296B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.signup-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h1 {
+    text-align: center;
+}
+
+.signup-container h4 {
+    color: #666;
+    font-weight: 400;
+    text-align: center;
+}
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.name {
+    display: flex;
+    gap: 16px;
+    text-align: left;
+}
+
+.name .first input {
+    flex: 1;
+}
+
+.name .second input {
+    flex: 1;
+}
+
+.signup-container .signup-form .email label {
+    margin: 0;
+    position: absolute;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline;
+    border: 1px solid #cccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.signup-btn {
+    background-color: #2962FF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: semibold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.signup-btn:hover {
+    background-color: #2559E8;
+}
+
+.signup-container p {
+    color: #666;
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .signup-container .terms-link,
+  .create-account-form .privacy-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .signup-container .terms-link:hover,
+  .signup-container .privacy-link:hover {
+    text-decoration: underline;
+  }
