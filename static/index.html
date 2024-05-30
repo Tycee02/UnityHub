@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/unityhub.ico">
+    <link rel="icon" type="image/png" href="images/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/filters.css">
-    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
     <title>UnityHub</title>
 </head>
 <body>
-    <header class="navbar">
-        <div class="nav">
-            <img src="images/unityhub.png" alt="logo">
-            <a href="#"><h1>UnityHub</h1></a>
-            <div class="menu">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/unityhub.png" alt="logo">
+                <h1>UnityHub</h1>
+            </div>
+            <nav>
                 <ul class="list">
-                    <li class="dropdown lists">
-                        <a href="#">Tools <i class="fa-solid fa-caret-down"></i></a>
+                    <li class="dropdown lists"><a href="#">Tools <i class="fa-solid fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
                             <li class="dropdowns"><a href="#">Create</a></li>
                             <li class="dropdowns"><a href="#">Publish</a></li>
@@ -43,52 +45,217 @@
                     <li class="lists"><a href="#">Pricing</a></li>
                     <li class="lists"><a href="#">Blog <i class="fa-solid fa-magnifying-glass"></i></a></li>
                 </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button onclick="window.location.href='file:///C:/Users/OLUTUNMIBI%20IFEOLUWA/Desktop/UnityHub/static/trial.html'" class="login">Log in</button>
+                <button onclick="window.location.href='file:///C:/Users/OLUTUNMIBI%20IFEOLUWA/Desktop/UnityHub/static/trial2.html'" class="get-started">Try for free</button>
             </div>
-        </div>
-        <div class="logs">
-            <button class="login"><a href="#">Log in</a></button>
-            <button class="logbutt" id="starter">Get started now</button>
         </div>
     </header>
     <main>
-        <div class="body">
-            <h1>Grow your audience on Social and Beyond</h1><br />
-        </div>
-        <div class="body2">
-            <p>UnityHub helps you build an audience organically. We’re a values-driven company that provides affordable, intuitive marketing tools for ambitious people and teams.</p>
-        </div>
-        <div class="form">
-            <form>
-                <div class="start">
-                    <input type="email" id="email" name="email" placeholder="Enter your email"><button type="submit">Get started now</button>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Grow your audience on Social and Beyond</h2>
+                    <p>UnityHub helps you build an audience organically. We're a values-driven company that provides affordable, intuitive marketing tools for ambitious people and teams.</p>
+                    <form>
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="get-started">Try for free</button>
+                    </form>
+                    <ul class="featured">
+                        <li><i class="fa fa-check"></i> Try for free</li>
+                        <li><i class="fa fa-check"></i> No credit card required</li>
+                        <li><i class="fa fa-check"></i> Cancel anytime</li>
+                    </ul>
                 </div>
-                <div class="form-options">
-                  <div class="option">
-                    <i class="fa fa-check"></i>
-                    <label for="try-for-free">Try for free</label>
-                  </div>
-                  <div class="option">
-                    <i class="fa fa-check"></i>
-                    <label for="no-credit-card">No credit card required</label>
-                  </div>
-                  <div class="option">
-                    <i class="fa fa-check"></i>
-                    <label for="cancel-anytime">Cancel anytime</label>
-                  </div>
+                <div class="hero-image">
+                    <img src="images/hero-2.jpg" alt="Dashboard preview">
                 </div>
-              </form>
-        </div>
-        <div class="image">
-            <img src="images/imagedt.png" alt="image-one">
-        </div>
-        <div class="build">
-            <h1>Build a following without draining your time</h1>
-            <div class="inside">
-                <p>Creating content is hard enough. Let alone distributing it to all the different</p>
-                <p>marketing channels. Here are four ways Buffer can help.</p>
             </div>
-        </div>
+        </section>
+        <section class="contain">
+            <h1 class="centered-text">Build a following without draining your time</h1>
+              <div class="text-content">
+                <p>Creating content is hard enough. Let alone distributing it to all the different marketing channels. Here are four ways UnityHub can help.</p>
+              </div>
+        </section>
+        <section class="sector">
+            <div class="cards">
+                <a href="#" onclick="showSection('engagement')">
+                    <span class="icon-wrapper icon-wrapper-one"><i class="fas fa-comments"></i></span> Engagement</a>
+                <a href="#" onclick="showSection('publishing')">
+                    <span class="icon-wrapper icon-wrapper-two"><i class="fas fa-pencil-alt"></i></span> Publishing</a>
+                <a href="#" onclick="showSection('analytics')">
+                    <span class="icon-wrapper icon-wrapper-three"><i class="fas fa-chart-line"></i></span> Analytics</a>
+                <a href="#" onclick="showSection('listening')">
+                    <span class="icon-wrapper icon-wrapper-four"><i class="fas fa-volume-up"></i></span> Listening</a>
+                <a href="#" onclick="showSection('advocacy')">
+                    <span class="icon-wrapper icon-wrapper-five"><i class="fas fa-user-friends"></i></span> Advocacy</a>
+                <a href="#" onclick="showSection('influencer')">
+                    <span class="icon-wrapper icon-wrapper-six"><i class="fas fa-users"></i></span> Influencer Marketing</a>
+            </div>
+            <div class="container">
+                <div id="engagement" class="section engagement">
+                  <h2>Surprise and delight your customers</h2>
+                  <p>Automate tasks to accelerate response times with a unified inbox, so you can spend more time connecting on a human level with customers.</p>
+                  <ul class="feature">
+                    <li><i class="fas fa-check-circle"></i> Accelerate your agents’ response times</li>
+                    <li><i class="fas fa-check-circle"></i> Centralize your team’s workspace</li>
+                    <li><i class="fas fa-check-circle"></i> Quickly view cross-channel conversations</li>
+                  </ul>
+                </div>
+            
+                <div id="publishing" class="section publishing">
+                  <h2>PPlan and strengthen your publishing</h2>
+                  <p>Schedule, organize and deliver content as a team with cross-network social publishing.</p>
+                  <ul class="feature">
+                    <li><i class="fas fa-check-circle"></i> Accelerate your agents’ response times</li>
+                    <li><i class="fas fa-check-circle"></i> Centralize your team’s workspace</li>
+                    <li><i class="fas fa-check-circle"></i> Quickly view cross-channel conversations</li>
+                  </ul>
+                </div>
+            
+                <div id="analytics" class="section active analytics">
+                  <h2>Prove the ROI of your social efforts</h2>
+                  <p>Drive business impact across teams with rich social data and dashboards.</p>
+                  <ul class="feature">
+                    <li><i class="fas fa-check-circle"></i> Accelerate your agents’ response times</li>
+                    <li><i class="fas fa-check-circle"></i> Centralize your team’s workspace</li>
+                    <li><i class="fas fa-check-circle"></i> Quickly view cross-channel conversations</li>
+                  </ul>
+                </div>
+
+                <div id="listening" class="section listening">
+                    <h2>Discover essential insights</h2>
+                    <p>Uncover key learnings from millions of unfiltered thoughts, feelings and opinions to enhance your current strategy and guide future action.</p>
+                    <ul class="feature">
+                        <li><i class="fas fa-check-circle"></i> Accelerate your agents’ response times</li>
+                        <li><i class="fas fa-check-circle"></i> Centralize your team’s workspace</li>
+                        <li><i class="fas fa-check-circle"></i> Quickly view cross-channel conversations</li>
+                      </ul>
+                </div>
+
+                <div id="advocacy" class="section advocacy">
+                    <h2>Extend your social reach</h2>
+                    <p>Give your employees a simple way to share curated content across their social networks..</p>
+                    <ul class="feature">
+                        <li><i class="fas fa-check-circle"></i> Accelerate your agents’ response times</li>
+                        <li><i class="fas fa-check-circle"></i> Centralize your team’s workspace</li>
+                        <li><i class="fas fa-check-circle"></i> Quickly view cross-channel conversations</li>
+                      </ul>
+                </div>
+
+                <div id="influencer" class="section influencer">
+                    <h2>Drive brand growth</h2>
+                    <p>Reach new targeted audiences & foster authentic customer engagements.</p>
+                    <ul class="feature">
+                        <li><i class="fas fa-check-circle"></i> Accelerate your agents’ response times</li>
+                        <li><i class="fas fa-check-circle"></i> Centralize your team’s workspace</li>
+                        <li><i class="fas fa-check-circle"></i> Quickly view cross-channel conversations</li>
+                      </ul>
+                  </div>
+        </section>
+        <section class="impact-section">
+            <h2>Driving business impact should be easier</h2>
+            <p>UnityHub's unified social media management platform enables your team to extract real business value,<br> strengthen your market position and drive revenue—quickly.</p>
+            <div class="container">
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>See value faster</h3>
+                        <p>Get the insights your team has been waiting for—now. You won’t spend months onboarding, wondering how much of your budget went to learning how to use our platform.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Capture insights with ease</h3>
+                        <p>Stay ahead of your competitors with a platform that guides you to make strategic business decisions based on accurate data with help from our advanced AI and Machine Learning (ML) technology.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3>Transition seamlessly</h3>
+                        <p>Elevate your business without rebuilding your tech stack. Our global Salesforce partnership and social network integrations make it easy to work within your current processes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="feet">
+            <div class="sections">              
+              <div class="sect">
+                <h3>Tools</h3>
+                <ul>
+                  <li><a href="#">Create</a></li>
+                  <li><a href="#">Publish</a></li>
+                  <li><a href="#">Analyze</a></li>
+                  <li><a href="#">Engage</a></li>
+                  <li><a href="#">Start page</a></li>
+                  <li><a href="#">Extras</a></li>
+                  <li><a href="#">AI Assistant</a></li>
+                </ul>
+              </div>
+          
+              <div class="sect">
+                <h3>Resources</h3>
+                <ul>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Content Library</a></li>
+                  <li><a href="#">Browser Extension</a></li>
+                  <li><a href="#">Free Social Media Post Creator</a></li>
+                  <li><a href="#">Free Image Editors</a></li>
+                  <li><a href="#">Free UTM Builder</a></li>
+                  <li><a href="#">Free Marketing Tools</a></li>
+                  <li><a href="#">Social Media Terms Glossary</a></li>
+                  <li><a href="#">Compare UnityHub</a></li>
+                </ul>
+              </div>
+
+              <div class="sect">
+                <h3>Support</h3>
+                <ul>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Status</a></li>
+                  <li><a href="#">What's New</a></li>
+                  <li><a href="#">Product Roadmap</a></li>
+                  <li><a href="#">Request a Feature</a></li>
+                  <li><a href="#">Report a Bug</a></li>
+                </ul>
+              </div>
+
+              <div class="sect">
+                <h3>About</h3>
+                <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Transparency</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Assesibility</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">Sitemap</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-links">
+            <p>&copy; 2024 UnityHub, Inc.</p>
+            <a href="#">Terms</a>
+            <a href="#">Sitemap</a>
+            <a href="#">Privacy</a>
+            <a href="#">Your Privacy Choices</a>
+        </div>
+        <div class="footer-icons">
+            <a href="#" class="icon-link"><i class="fas fa-globe"></i> English (US)</a>
+            <a href="#" class="icon-link"><i class="fas fa-dollar-sign"></i> USD</a>
+            <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
     <script src="script/app.js"></script>
 </body>
 </html>
