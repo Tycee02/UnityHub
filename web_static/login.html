@@ -10,38 +10,52 @@
 </head>
 <body>
     <div class="container">
-        <div class="left">
-            <h1>Extend your social reach with employee advocacy</h1>
-            <p>I can more easily interact with all of my clients and fans in one place. Scaling my social scheduling for both myself and my clients is much more efficient—meaning that, I can get a lot more of my social tasks completed in a lot less time. I find the time that I save using Sprout more than justifies cost and ROI.</p>
+        <div class="writeup">
+            <h1>Helps me better manage and scale my social media business</h1>
+            <p>I can more easily interact with all of my clients and fans in one place. Scaling my social scheduling for both myself and my clients is much more efficient—meaning that, I can get a lot more of my social tasks completed in a lot less time. I find the time that I save using UnityHub more than justifies cost and ROI.</p>
             <a href="#">Learn More</a>
         </div>
-        <div class="right">
+        <div class="log-in">
             <div class="logo">
                 <img src="images/unityhub.png" alt="logo">
                 <h1>UnityHub</h1>
             </div>
-            <h4 style="text-align: center;">Welcome back, good to see you again!</h4>
+            <h4>Welcome back, good to see you again!</h4>
+	    <div class="login-container">
             <form>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div class="form-group checkbox">
-                    <input type="checkbox" id="remember-me" name="remember-me"><p>Remember Me</p> 
-                    <input type="checkbox" onclick="myFunction()"><p>Show Password</p>
-                    <a href="#">Forgot your password?</a>
-                </div>
-                <button onclick="window.location.href='file:///C:/Users/OLUTUNMIBI%20IFEOLUWA/Desktop/UnityHub/static/dashboard.html'" type="submit" class="btn">Log In</button>
-                <button type="button" class="btn2">Log in with Single Sign-On</button>
-                <div class="form-footer">
-                    <p>Don't have an account? <a href="#">Sign up now</a></p>
+		<label for="email">Email Address</label>
+		<input type="text" id="email address" name="email address" placeholder="Enter your email address" required>
+		<label for="password">Password</label>
+		<input type="password" id="passWord" name="password" placeholder="Enter your password">
+                <div class="show-password">
+			<input type="checkbox" id="show-password" onclick="myFunction()">
+			<label for="show-password">Show Password</label>
+		<div>
+
+		<div class="additional-options">
+			<div class="remember-me">
+				<input type="checkbox" id="remember-me">
+				<label for="remember-me">Remember me</label>
+			<div>
+			<a href="#" class="forgot-password">Forgot your password?</a>
+		<div>
+		<button type="submit" class="login-btn">Login</button>
+		<button type="submit" class="sso-btn">With Single Sign-On</button>
+                <div class="signup-link-container">
+			<span>Don't have an account?</span>
                 </div>
             </form>
+	    <div>
         </div>
     </div>
+    <script>
+	    function myFunction() {
+                var x = document.getElementById("passWord");
+                if (x.type === "password") {
+                        x.type = "text";
+                } else {
+                        x.type = "password";
+                }
+    <script>
 </body>
 </html>
