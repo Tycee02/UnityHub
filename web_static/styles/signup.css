@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: radial-gradient(circle, grey, #fff);
+    background: radial-gradient(circle, rgb(224, 224, 226), #fff);
     color: #11296B;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -86,7 +86,7 @@ input[type=text], input[type=password] {
 
 .signup-container p {
     color: #666;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 100;
     margin-top: 16px;
     text-align: center;
