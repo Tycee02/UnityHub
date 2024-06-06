@@ -7,143 +7,147 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #f0f2f5;
+    color: #11266B;
 }
 .container {
     display: flex;
     width: 100%;
     height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(red, green, blue, alpha);
     overflow: hidden;
 }
-.left {
-    background-color: #11296B;
+.writeup {
+    background-color: #17254d;
     color: white;
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 40px;
-    max-width: 65%;
-    flex: 1;
+    margin-right: 40px;
 }
-.left h1 {
-    font-size: 32px;
+
+.log-in {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    margin-right: 40px;
+
+.writeup h1 {
+    font-size: 56px;
     margin-bottom: 20px;
 }
-.left p {
+.writeup p {
     font-size: 16px;
     margin-bottom: 20px;
 }
-.left a {
+.writeup a {
     display: inline-block;
     margin-top: 20px;
     color: white;
     text-decoration: none;
+    text-align: left;
+    margin-top: 20px;
     padding: 10px 20px;
     border: 2px solid white;
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
+    width: 100px;
 }
-.left a:hover {
+.writeup a:hover {
     background-color: white;
     color: #003f5f;
 }
-.right {
-    background-color: white;
-    padding: 40px;
-    flex: 1;
-    max-width: 35%;
-}
-.right h2 {
+.log-in h2 {
     font-size: 24px;
     margin-bottom: 20px;
 }
-.form-group {
-    margin-bottom: 20px;
-}
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-}
-.form-group input {
+input[type=text], input[type=password] {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline;
+    border: 1px solid #cccc;
+    border-radius: 8px;
+    border-color: #553f91;
+    box-sizing: border-box;
 }
-.form-group input[type="checkbox"] {
-    display: inline-block;
-    width: auto;
-}
-.form-group a {
-    display: inline-block;
-    margin-top: 8px;
-    color: #007bff;
-    text-decoration: none;
-}
-.form-group a:hover {
-    text-decoration: underline;
-}
-.btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-.btn:hover {
-    background-color: #0056b3;
-}
-
-.btn2 {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    background-color: white; 
-    color: #11296B; 
-    border: 2px solid #11296B; 
-    margin-top: 10px;
-    transition: background-color 0.3s;
-}
-
-.btn2:hover {
-    background-color: #0056b3;
-    border: none;
-    color: white;
-}
-.form-footer {
+.additional-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
-    text-align: center;
+    font-size: 14px;
 }
-.form-footer a {
-    color: #007bff;
-    text-decoration: none;
-}
-.form-footer a:hover {
-    text-decoration: underline;
-}
-
-.checkbox {
+.remember-me {
     display: flex;
     align-items: center;
+}
+.remember-me input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.forgot-password {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+.login-btn, .sso-btn {
+    background-color: #2962FF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    font-size: 16px;
+    font-weight: semibold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+.login-btn:hover {
+    background-color: #2559E8;
+}
+
+.sso-btn {
+    background-color: white; 
+    color: #11296B; 
+    border: 2px solid; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sso-btn:hover {
+    background-color: #0056b3;
+}
+.signup-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.signup-link-container span {
+    margin-right: 5px;
+}
+.signup-link {
+    color: #2962FF;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
 }
 
 .checkbox input {
     margin-left: 20px;
-}
-
-.checkbox a {
-    margin-left: 20px;
-    margin-top: 0;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    padding-left: 100px;
 }
 
 .logo img {
